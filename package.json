@@ -1,0 +1,18 @@
+{
+  "name": "diario-yanna",
+  "version": "1.0.0",
+  "description": "Diario para a minha namorada Yanna",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "toto9",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "mysql2": "^3.3.3",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.0"
+  }
+}
