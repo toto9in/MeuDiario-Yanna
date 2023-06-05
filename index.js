@@ -3,18 +3,15 @@ const exphbs = require('express-handlebars');
 
 const app = express()
 
-//TODO IMPORTAR MODULO DO BANCO (FEITO)
 const conn = require('./db/conn')
 
-
-//TODO IMPORTAR MODELS (FEITO)
 const Anotacao = require('./models/Anotacao')
-//TODO IMPORTAR ROUTES
+
 const diarioRoutes = require('./routes/diarioRoutes')
-//SETAR HANDLEBARS
+
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
-//SETAR JSON
+
 app.use(
     express.urlencoded({
         extended: true,
@@ -22,8 +19,7 @@ app.use(
 )
 app.use(express.json())
 
-//SETAR PASTA PUBLIC
-
+app.use(express.static('public'))
 //MIDLEWARE ROUTES
 
 

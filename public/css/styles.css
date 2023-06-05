@@ -1,0 +1,95 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfb00;
+  }
+  .navbar{
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfb00;
+    font-size: 20px;
+  }
+  .container-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .anotacao-container{
+    margin-top: 3.8rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    min-width: 450px;
+    min-height: 450px;
+    -webkit-box-shadow: -8px 10px 14px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: -8px 10px 14px -1px rgba(0,0,0,0.2);
+    box-shadow: -8px 10px 14px -1px rgba(0,0,0,0.2);
+  }
+  
+  .caixa-anotacao{
+
+    margin: 1.1rem;
+    margin-top: 3rem;
+    display: flex;
+    align-self: center;
+    max-width: 420px;
+    max-height: 420px;
+  }
+
+  .data-anotacao{
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    max-width: 330px;
+  }
+  
+  .botao-criaranotacao {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #FFD700;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .botao-criaranotacao:hover {
+    background-color: #FFC107;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text-box {
+    width: 420px;
+    height: 420px;
+    resize: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .submit-button {
+    margin-top: 10px;
+  }
+  
