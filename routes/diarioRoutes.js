@@ -6,6 +6,6 @@ const AnotacaoController = require('../controllers//AnotacaoController')
 //ADICIONAR ROTA DE EDIT
 router.get('/', AnotacaoController.showAnotacoes)
 router.get('/add', AnotacaoController.createAnotacoes)
-//router.post('/add', SALVARANOTACAO)
+router.post('/add', AnotacaoController.createAnotacoesSave)
 
 module.exports = router

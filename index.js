@@ -1,6 +1,6 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
-
+const hbs = require('handlebars')
 const app = express()
 
 const conn = require('./db/conn')
@@ -11,6 +11,10 @@ const diarioRoutes = require('./routes/diarioRoutes')
 
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
+
+hbs.registerHelper('formatDate', function(date) {
+    return new Date(date).toLocaleDateString('pt-BR');
+});
 
 app.use(
     express.urlencoded({
