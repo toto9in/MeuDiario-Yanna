@@ -9,7 +9,7 @@ const Anotacao = db.define('Anotacao', {
         defaultValue: DataTypes.NOW
     },
     conteudo: {
-        type: DataTypes.MEDIUMTEXT,
+        type: DataTypes.TEXT('medium'),
          allowNull: false
      }
     
