@@ -12,7 +12,22 @@
     {{#each anotacao}}
     <div class="anotacao-container">
             <div class="data-anotacao">
+                
                 <h3>{{formatDate this.dataCriacao}}</h3>
+                <div class="editar-remover">
+
+                
+                    <a href="/edit/{{this.id}}" class="editar-button">
+                        <i class="bi bi-pencil-fill"></i>
+                    </a>
+
+                <form action="/delete" method="POST">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <button class="remover-button" type="submit">
+                        <i class="bi bi-trash-fill"></i>
+                    </button>
+                </form>
+                </div>
             </div>
             <div class="caixa-anotacao">
                 <p class="texto-anotacao">{{this.conteudo}}</p>
@@ -20,6 +35,7 @@
     </div>
     {{/each}}
     <a href="/add" class="botao-criaranotacao">Criar Anotação</a>
+    <a href="/sobre" class="botao-sobre">sobre esse diario</a>
 
 
 </body>

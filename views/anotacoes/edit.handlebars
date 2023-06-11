@@ -1,0 +1,9 @@
+<h1>Editando minha anotação</h1>
+<a href="/" class="botao-voltar">Voltar</a>
+<div class="form-container">
+  <form action="/edit" method="POST">
+    <input type="hidden" name="id" value="{{anotacao.id}}">
+    <textarea class="text-box" name="conteudo" required="true">{{anotacao.conteudo}}</textarea>
+    <input type="submit" value="Criar" class="submit-button">
+  </form>
+</div>
